@@ -1,11 +1,13 @@
 :root {
   --border: 1px #000000 solid;
+  --background-article: #ffffff;
+  --background-main: #b4b4b4;
   --background-tags: #cecece;
   --background-button: transparent;
   --background-nav: #ffffff;
   --background-nav-current: #000000;
   --color-nav-current: #ffffff;
-  --small-text: 14px;
+  --small-text: 16px;
   --medium-text: 22px;
   --normal-text: 18px;
   --big-text: 30px;
@@ -38,6 +40,11 @@ main {
   flex-direction: column;
   padding: 20px 20px 100px;
   gap: 20px;
+  background-color: var(--background-main);
+}
+
+article {
+  background-color: var(--background-article);
 }
 
 .card {
@@ -113,4 +120,79 @@ nav {
 }
 .current svg {
   fill: var(--color-nav-current);
+}
+
+.info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.info__head {
+  display: flex;
+  align-items: center;
+}
+
+.info__head__avatar {
+  border: var(--border);
+  width: 35%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.info__head__avatar svg {
+  width: 100%;
+  height: 100%;
+}
+
+.info__head h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.info__text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.info__counter {
+  display: flex;
+  gap: 20px;
+}
+
+.info__counter div {
+  display: flex;
+  border: var(--border);
+  border-radius: 3px;
+  padding: 6px 0;
+}
+
+.info__counter div svg {
+  height: 30px;
+}
+
+.info__counter div p {
+  padding: 3px 12px 0px 8px;
+  font-size: var(--small-text);
+  font-weight: 600;
+}
+
+.settings {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.settings__dark-mode {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.settings__dark-mode div {
+  height: 50px;
+  width: 50px;
 }
