@@ -1,9 +1,13 @@
 :root {
-  --border-color: #000000;
-  --border-width: 1px;
+  --border: 1px #000000 solid;
+  --background-article: #ffffff;
+  --background-main: #b4b4b4;
   --background-tags: #cecece;
   --background-button: transparent;
-  --small-text: 14px;
+  --background-nav: #ffffff;
+  --background-nav-current: #000000;
+  --color-nav-current: #ffffff;
+  --small-text: 16px;
   --medium-text: 22px;
   --normal-text: 18px;
   --big-text: 30px;
@@ -16,6 +20,7 @@
 body,
 h1,
 h2,
+h3,
 p {
   margin: 0;
   padding: 0;
@@ -25,21 +30,26 @@ p {
 
 header {
   display: flex;
-  border-bottom: var(--border-width) var(--border-color) solid;
+  border-bottom: var(--border);
   justify-content: center;
-  padding: 10px;
+  padding: 20px;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  padding: 30px 20px;
+  padding: 20px 20px 100px;
   gap: 20px;
+  background-color: var(--background-main);
+}
+
+article {
+  background-color: var(--background-article);
 }
 
 .card {
   position: relative;
-  border: var(--border-width) var(--border-color) solid;
+  border: var(--border);
   font-size: var(--medium-text);
   font-weight: 500;
   display: flex;
@@ -58,21 +68,23 @@ main {
 .card__button {
   padding: 10px 30px;
   font-size: var(--normal-text);
+  font-weight: 500;
   background-color: var(--background-button);
+  border: var(--border);
 }
 
 .card__tags-wrapper {
   display: flex;
   gap: 5px;
   align-self: flex-start;
-  padding-top: 30px;
+  padding-top: 40px;
 }
 
 .card__tag {
   background-color: var(--background-tags);
   font-size: var(--small-text);
   font-weight: 400;
-  border: var(--border-width) var(--border-color) solid;
+  border: var(--border);
   padding: 2px 6px 2px 6px;
   border-radius: 3px;
 }
@@ -81,4 +93,106 @@ main {
   position: absolute;
   top: -15px;
   right: 0;
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  background-color: var(--background-nav);
+  border-top: var(--border);
+}
+
+.navbar__icon {
+  width: 100%;
+  padding: 6px 0px;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--background-nav);
+}
+
+.current {
+  background-color: var(--background-nav-current);
+}
+.current svg {
+  fill: var(--color-nav-current);
+}
+
+.info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.info__head {
+  display: flex;
+  align-items: center;
+}
+
+.info__head__avatar {
+  border: var(--border);
+  width: 35%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.info__head__avatar svg {
+  width: 100%;
+  height: 100%;
+}
+
+.info__head h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.info__text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.info__counter {
+  display: flex;
+  gap: 20px;
+}
+
+.info__counter div {
+  display: flex;
+  border: var(--border);
+  border-radius: 3px;
+  padding: 6px 0;
+}
+
+.info__counter div svg {
+  height: 30px;
+}
+
+.info__counter div p {
+  padding: 3px 12px 0px 8px;
+  font-size: var(--small-text);
+  font-weight: 600;
+}
+
+.settings {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.settings__dark-mode {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.settings__dark-mode div {
+  height: 50px;
+  width: 50px;
 }
