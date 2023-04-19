@@ -1,5 +1,5 @@
 :root {
-  --border: 1px #000000 solid;
+  --border: 1px #909090 solid;
   --background-article: #ffffff;
   --background-main: #b4b4b4;
   --background-tags: #cecece;
@@ -11,6 +11,7 @@
   --medium-text: 22px;
   --normal-text: 18px;
   --big-text: 30px;
+  --tags-color: #ffffff;
 }
 
 * {
@@ -29,27 +30,33 @@ p {
 }
 
 header {
+  position: relative;
+  top: 0;
+  width: 100%;
+  background-color: var(--background-nav);
   display: flex;
-  border-bottom: var(--border);
   justify-content: center;
   padding: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  z-index: 2;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  padding: 20px 20px 100px;
+  padding: 30px 20px 100px;
   gap: 20px;
   background-color: var(--background-main);
 }
 
-article {
+main article {
   background-color: var(--background-article);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 5px;
 }
 
 .card {
   position: relative;
-  border: var(--border);
   font-size: var(--medium-text);
   font-weight: 500;
   display: flex;
@@ -73,20 +80,22 @@ article {
   border: var(--border);
 }
 
-.card__tags-wrapper {
+.card__tags {
   display: flex;
   gap: 5px;
   align-self: flex-start;
   padding-top: 40px;
 }
 
-.card__tag {
+.card__tags div {
   background-color: var(--background-tags);
+  font-family: monospace;
   font-size: var(--small-text);
   font-weight: 400;
   border: var(--border);
   padding: 2px 6px 2px 6px;
   border-radius: 3px;
+  color: var(--tags-color);
 }
 
 .card__bookmark {
@@ -99,12 +108,12 @@ nav {
   position: fixed;
   bottom: 0;
   width: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .navbar {
   display: flex;
   background-color: var(--background-nav);
-  border-top: var(--border);
 }
 
 .navbar__icon {
