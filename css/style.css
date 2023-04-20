@@ -1,4 +1,11 @@
 /*
+Import of page-related styles
+*/
+
+@import url(index.css); /*also used for bookmarks*/
+@import url(profile.css);
+
+/*
 CSS reset
 */
 
@@ -43,6 +50,11 @@ Custom properties for changing colors and fonts
 /*
 Basic elements for all pages
 */
+
+.hidden-svg {
+  position: absolute;
+  top: -500px;
+}
 
 header {
   position: relative;
@@ -101,11 +113,3 @@ nav {
 .current svg {
   fill: var(--color-nav-current);
 }
-
-/*
-Import of page-related styles
-*/
-
-@import url(index.css);
-@import url(bookmarks.css);
-@import url(profile.css);
