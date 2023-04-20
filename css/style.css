@@ -79,6 +79,7 @@ main article {
   padding: 10px 30px;
   font-size: var(--text-normal);
   font-weight: 500;
+  color: var(--color-tags);
   background-color: var(--background-button);
   border: var(--border);
   border-radius: 10px;
