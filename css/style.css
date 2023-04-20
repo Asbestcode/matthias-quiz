@@ -48,13 +48,17 @@ Custom properties for changing colors and fonts
 }
 
 /*
-Basic elements for all pages
+hidden container for internal reference of svg
 */
 
 .hidden-svg {
   position: absolute;
-  top: -500px;
+  top: -200px;
 }
+
+/*
+Basic elements for all pages
+*/
 
 header {
   position: relative;

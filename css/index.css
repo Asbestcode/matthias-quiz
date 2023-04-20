@@ -55,7 +55,3 @@ Styles for the cards wich contain a
   top: -15px;
   right: 0;
 }
-
-.card__bookmark svg {
-  fill: var(--color-main-icons);
-}

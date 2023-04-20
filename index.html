@@ -9,65 +9,47 @@
   </head>
   <body>
     <!-- 
-  div .hidden-svg contains all the inline svg that is duplicated via <use> for cleaner html
-  at the moment inline svg has no added value. if not needed, might change it to external later.    
--->
+      div hidden-svg contains all the inline svg that is duplicated via <use> for cleaner html
+      might look for a better solution or change it to external later    
+    -->
 
     <div class="hidden-svg">
       <svg
         height="48"
         viewBox="0 96 960 960"
         width="48"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+        xmlns="http://www.w3.org/2000/svg">
         <g id="bookmark-card">
-          <path
-            d="M 249.22 862.252 L 484.442 762.817 L 719.665 862.252 L 719.665 248.536 L 249.22 248.536 L 249.22 862.252 Z M 249.22 248.536 L 719.665 248.536 L 249.22 248.536 Z"
-            style="fill: rgb(255, 255, 255)"
-          />
-          <path
-            d="M200 936V271q0-24 18-42t42-18h440q24 0 42 18t18 42v665L480 816 200 936Zm60-91 220-93 220 93V271H260v574Zm0-574h440-440Z"
-          />
+          <path d="M 249.22 862.252 L 484.442 762.817 L 719.665 862.252 L 719.665 248.536 L 249.22 248.536 L 249.22 862.252 Z M 249.22 248.536 L 719.665 248.536 L 249.22 248.536 Z" style="fill: rgb(255, 255, 255)" />
+          <path d="M200 936V271q0-24 18-42t42-18h440q24 0 42 18t18 42v665L480 816 200 936Zm60-91 220-93 220 93V271H260v574Zm0-574h440-440Z" />
         </g>
       </svg>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="48"
         viewBox="0 96 960 960"
-        width="48"
-      >
-        <path
-          id="index"
-          d="M220 876h150V626h220v250h150V486L480 291 220 486v390Zm-60 60V456l320-240 320 240v480H530V686H430v250H160Zm320-353Z"
-        />
+        width="48">
+        <path id="index" d="M220 876h150V626h220v250h150V486L480 291 220 486v390Zm-60 60V456l320-240 320 240v480H530V686H430v250H160Zm320-353Z" />
       </svg>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="48"
         viewBox="0 96 960 960"
-        width="48"
-      >
-        <path
-          id="bookmark-nav"
-          d="M200 936V271q0-24 18-42t42-18h440q24 0 42 18t18 42v665L480 816 200 936Zm60-91 220-93 220 93V271H260v574Zm0-574h440-440Z"
-        />
+        width="48">
+        <path id="bookmark-nav" d="M200 936V271q0-24 18-42t42-18h440q24 0 42 18t18 42v665L480 816 200 936Zm60-91 220-93 220 93V271H260v574Zm0-574h440-440Z" />
       </svg>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="48"
         viewBox="0 96 960 960"
-        width="48"
-      >
-        <path
-          id="profile"
-          d="M480 575q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM160 896v-94q0-38 19-65t49-41q67-30 128.5-45T480 636q62 0 123 15.5t127.921 44.694q31.301 14.126 50.19 40.966Q800 764 800 802v94H160Zm60-60h520v-34q0-16-9.5-30.5T707 750q-64-31-117-42.5T480 696q-57 0-111 11.5T252 750q-14 7-23 21.5t-9 30.5v34Zm260-321q39 0 64.5-25.5T570 425q0-39-25.5-64.5T480 335q-39 0-64.5 25.5T390 425q0 39 25.5 64.5T480 515Zm0-90Zm0 411Z"
-        />
+        width="48">
+        <path id="profile" d="M480 575q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM160 896v-94q0-38 19-65t49-41q67-30 128.5-45T480 636q62 0 123 15.5t127.921 44.694q31.301 14.126 50.19 40.966Q800 764 800 802v94H160Zm60-60h520v-34q0-16-9.5-30.5T707 750q-64-31-117-42.5T480 696q-57 0-111 11.5T252 750q-14 7-23 21.5t-9 30.5v34Zm260-321q39 0 64.5-25.5T570 425q0-39-25.5-64.5T480 335q-39 0-64.5 25.5T390 425q0 39 25.5 64.5T480 515Zm0-90Zm0 411Z" />
       </svg>
     </div>
 
     <!-- 
-  Page starts here 
--->
+      Page starts here 
+    -->
 
     <header>
       <h1>Quiz App</h1>
@@ -86,8 +68,7 @@
             height="48"
             viewBox="0 96 960 960"
             width="48"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+            xmlns="http://www.w3.org/2000/svg">
             <use href="#bookmark-card" />
           </svg>
         </div>
@@ -105,8 +86,7 @@
             height="48"
             viewBox="0 96 960 960"
             width="48"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+            xmlns="http://www.w3.org/2000/svg">
             <use href="#bookmark-card" />
           </svg>
         </div>
@@ -124,8 +104,7 @@
             height="48"
             viewBox="0 96 960 960"
             width="48"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+            xmlns="http://www.w3.org/2000/svg">
             <use href="#bookmark-card" />
           </svg>
         </div>
@@ -138,8 +117,7 @@
             xmlns="http://www.w3.org/2000/svg"
             height="48"
             viewBox="0 96 960 960"
-            width="48"
-          >
+            width="48">
             <use href="#index" />
           </svg>
         </a>
@@ -148,8 +126,7 @@
             xmlns="http://www.w3.org/2000/svg"
             height="48"
             viewBox="0 96 960 960"
-            width="48"
-          >
+            width="48">
             <use href="#bookmark-nav" />
           </svg>
         </a>
@@ -158,9 +135,8 @@
             xmlns="http://www.w3.org/2000/svg"
             height="48"
             viewBox="0 96 960 960"
-            width="48"
-          >
-            <use href="profile" />
+            width="48">
+            <use href="#profile" />
           </svg>
         </a>
       </div>
