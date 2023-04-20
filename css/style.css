@@ -51,11 +51,6 @@ Custom properties for changing colors and fonts
 Basic elements for all pages
 */
 
-.hidden-svg {
-  position: absolute;
-  top: -500px;
-}
-
 header {
   position: relative;
   top: 0;
