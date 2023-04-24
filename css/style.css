@@ -4,6 +4,7 @@ Import of page-related styles
 
 @import url(index.css); /*also used for bookmarks*/
 @import url(profile.css);
+@import url(icons.css);
 
 /*
 CSS reset
@@ -48,15 +49,6 @@ Custom properties for changing colors and fonts
 }
 
 /*
-hidden container for internal reference of svg
-*/
-
-.hidden-svg {
-  position: absolute;
-  top: -200px;
-}
-
-/*
 Basic elements for all pages
 */
 
@@ -88,7 +80,7 @@ main article {
 
 /*
 Navbar
-.current highlights the active page
+current highlights the active page
 */
 
 nav {
@@ -114,6 +106,4 @@ nav {
 .current {
   background-color: var(--background-nav-current);
 }
-.current svg {
-  fill: var(--color-nav-current);
-}
+

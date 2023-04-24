@@ -1,0 +1,31 @@
+/*
+basic colors of the icons
+*/
+
+.icon .fill {
+    fill: yellow;
+}
+
+.icon .inner-line {
+    fill: green;
+}
+
+.icon .outer-line {
+    stroke: rosybrown;
+}
+
+/*
+navbar icon of the current page
+*/
+
+.current .icon .fill {
+    fill: red;
+}
+
+.current .icon .inner-line {
+    fill: blue;
+}
+  
+.current .icon .outer-line {
+    stroke: lightskyblue;
+}
