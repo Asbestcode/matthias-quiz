@@ -33,14 +33,14 @@ Custom properties for changing colors and fonts
   --border: 3px #2c2c3d solid;
   --background-article: #ffedf4;
   --background-main: #a9a3e4;
-  --background-tags: #140f07;
+  --background-tags: #2c2c3d;
   --background-button: #a9a3e4;
   --background-nav: #ffffff;
-  --background-header: #140f07;
-  --background-nav-current: #140f07;
+  --background-header: #2c2c3d;
+  --background-nav-current: #2c2c3d;
   --color-header: #ffffff;
   --color-tags: #ffffff;
-  --color-main-icons: #140f07;
+  --color-main-icons: #2c2c3d;
   --color-nav-current: #ffffff;
   --text-small: 16px;
   --text-normal: 18px;

@@ -52,6 +52,6 @@ Styles for the cards wich contain a
 
 .card__bookmark {
   position: absolute;
-  top: -16px;
+  top: -15px;
   right: 0;
 }

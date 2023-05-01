@@ -3,15 +3,19 @@ basic colors of the icons
 */
 
 .icon .fill {
-    fill: yellow;
+    fill: var(--background-nav);
 }
 
 .icon .inner-line {
-    fill: green;
+    fill: var(--background-header);
 }
 
 .icon .outer-line {
-    stroke: rosybrown;
+    stroke: transparent;
+}
+
+#bookmark-saved .fill {
+    fill: var(--background-header);
 }
 
 /*
@@ -19,13 +23,13 @@ navbar icon of the current page
 */
 
 .current .icon .fill {
-    fill: red;
+    fill: var(--background-header);
 }
 
 .current .icon .inner-line {
-    fill: blue;
+    fill: var(--background-nav);
 }
   
 .current .icon .outer-line {
-    stroke: lightskyblue;
+    stroke: transparent;
 }
