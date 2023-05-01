@@ -27,9 +27,9 @@ Styles for the cards wich contain a
   padding: 10px 30px;
   font-size: var(--text-normal);
   font-weight: 500;
-  color: var(--color-tags);
-  background-color: var(--background-button);
-  border: var(--border);
+  color: var(--white);
+  background-color: var(--mid-color);
+  border: 3px var(--dark-color) solid;
   border-radius: 10px;
 }
 
@@ -41,13 +41,13 @@ Styles for the cards wich contain a
 }
 
 .card__tags div {
-  background-color: var(--background-tags);
+  background-color: var(--dark-color);
   font-family: monospace;
   font-size: var(--text-small);
   font-weight: 400;
   padding: 2px 6px 2px 6px;
   border-radius: 3px;
-  color: var(--color-tags);
+  color: var(--white);
 }
 
 .card__bookmark {

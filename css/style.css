@@ -14,6 +14,10 @@ CSS reset
   box-sizing: border-box;
 }
 
+body {
+  color: var(--dark-color);
+}
+
 body,
 h1,
 h2,
@@ -30,18 +34,11 @@ Custom properties for changing colors and fonts
 */
 
 :root {
-  --border: 3px #2c2c3d solid;
-  --background-article: #ffedf4;
-  --background-main: #a9a3e4;
-  --background-tags: #2c2c3d;
-  --background-button: #a9a3e4;
-  --background-nav: #ffffff;
-  --background-header: #2c2c3d;
-  --background-nav-current: #2c2c3d;
-  --color-header: #ffffff;
-  --color-tags: #ffffff;
-  --color-main-icons: #2c2c3d;
-  --color-nav-current: #ffffff;
+  --light-color: #ffedf4;
+  --mid-color: #a9a3e4;
+  --dark-color: #2c2c3d;
+  --white: #ffffff;
+ 
   --text-small: 16px;
   --text-normal: 18px;
   --text-medium: 22px;
@@ -56,12 +53,12 @@ header {
   position: relative;
   top: 0;
   width: 100%;
-  background-color: var(--background-header);
+  background-color: var(--dark-color);
   display: flex;
   justify-content: center;
   padding: 20px;
   z-index: 2;
-  color: var(--color-header);
+  color: var(--white);
 }
 
 main {
@@ -69,11 +66,11 @@ main {
   flex-direction: column;
   padding: 30px 20px 100px;
   gap: 30px;
-  background-color: var(--background-main);
+  background-color: var(--mid-color);
 }
 
 main article {
-  background-color: var(--background-article);
+  background-color: var(--light-color);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   border-radius: 5px;
 }
@@ -92,7 +89,7 @@ nav {
 
 .navbar {
   display: flex;
-  background-color: var(--background-nav);
+  background-color: var(--white);
 }
 
 .navbar__icon {
@@ -100,10 +97,10 @@ nav {
   padding: 6px 0px;
   text-align: center;
   text-decoration: none;
-  background-color: var(--background-nav);
+  background-color: var(--white);
 }
 
 .current {
-  background-color: var(--background-nav-current);
+  background-color: var(--dark-color);
 }
 

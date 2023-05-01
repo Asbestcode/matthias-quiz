@@ -15,11 +15,11 @@ Profile info
 }
 
 .info__head__avatar {
-  border: var(--border);
+  border: 3px var(--dark-color) solid;
   width: 35%;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 .info__head__avatar svg {
@@ -47,7 +47,7 @@ Profile info
   display: flex;
   border-radius: 3px;
   padding: 6px 0;
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 .info__counter div svg {

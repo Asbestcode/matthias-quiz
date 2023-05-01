@@ -3,11 +3,11 @@ basic colors of the icons
 */
 
 .icon .fill {
-    fill: var(--background-nav);
+    fill: var(--white);
 }
 
 .icon .inner-line {
-    fill: var(--background-header);
+    fill: var(--dark-color);
 }
 
 .icon .outer-line {
@@ -15,7 +15,7 @@ basic colors of the icons
 }
 
 #bookmark-saved .fill {
-    fill: var(--background-header);
+    fill: var(--dark-color);
 }
 
 /*
@@ -23,11 +23,11 @@ navbar icon of the current page
 */
 
 .current .icon .fill {
-    fill: var(--background-header);
+    fill: var(--dark-color);
 }
 
 .current .icon .inner-line {
-    fill: var(--background-nav);
+    fill: var(--white);
 }
   
 .current .icon .outer-line {
