@@ -6,6 +6,10 @@ basic colors of the icons
     fill: var(--icon-light);
 }
 
+.saved {
+    fill: var(--icon-dark);
+}
+
 .icon .inner-line {
     fill: var(--icon-dark);
 }

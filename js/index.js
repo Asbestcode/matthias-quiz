@@ -1,25 +1,34 @@
-let root = document.documentElement;
+const answerButtons = document.querySelectorAll(".card__button");
+const AllAnswers = document.querySelectorAll(".card__answer");
+const bookmarkIcons = document.querySelectorAll(".card__bookmark svg");
 
-let darkmode = localStorage.getItem("darkmode");
-
-if (darkmode == "true") {
-    addDarkmode();
-  }
-  document.querySelector("#switch").addEventListener("click", function () {
-    darkmode = localStorage.getItem("darkmode");
-    if (darkmode == "true") {
-      removeDarkmode();
+answerButtons.forEach((item, index) => {
+  item.addEventListener('click', () => {
+    const answer = AllAnswers[index];
+    const button = answerButtons[index];
+    answer.classList.toggle("hidden");
+    if (button.textContent.includes("Show Answer")) {
+      button.textContent = "Hide Answer"
     } else {
-      addDarkmode();
+      button.textContent = "Show Answer"
     }
-  });
-  
-  function addDarkmode() {
-    darkmode = localStorage.setItem("darkmode", "true");
-    root.style.setProperty('--color-body', "#ffffff");
-  }
-  
-  function removeDarkmode() {
-    darkmode = localStorage.setItem("darkmode", "false");
-    root.style.setProperty('--color-body', "#2c2c3d");
-  }
+  })
+})
+
+bookmarkIcons.forEach((item) => {
+  item.addEventListener('click', () => {
+    const path = item.querySelector("g path");
+    bookmarkIconSwitch(path);
+  })
+});
+
+function bookmarkIconSwitch (path) {
+  if (path.classList.contains("fill")) {
+    path.classList.remove("fill");
+    path.classList.add("saved");
+  } else {
+    path.classList.remove("saved");
+    path.classList.add("fill");
+  } 
+};
+
