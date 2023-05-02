@@ -38,7 +38,10 @@ Custom properties for changing colors and fonts
   --mid-color: #a9a3e4;
   --dark-color: #2c2c3d;
   --white: #ffffff;
- 
+
+  --s: #4b4285;
+  --icon-dark: #2c2c3d;
+  --icon-light: #ffffff;
   --text-small: 16px;
   --text-normal: 18px;
   --text-medium: 22px;
@@ -58,7 +61,7 @@ header {
   justify-content: center;
   padding: 20px;
   z-index: 2;
-  color: var(--white);
+  color: var(--light-color);
 }
 
 main {

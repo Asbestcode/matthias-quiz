@@ -29,7 +29,7 @@ Styles for the cards wich contain a
   font-weight: 500;
   color: var(--white);
   background-color: var(--mid-color);
-  border: 3px var(--dark-color) solid;
+  border: 3px var(--icon-dark) solid;
   border-radius: 10px;
 }
 

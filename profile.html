@@ -71,7 +71,9 @@
                 <path class="fill" d="M6 13.5V19.5L11.5 26.5H41.5L47 19.5V13.5L41.5 6.5H11.5L6 13.5Z"/>
                 <path class="inner-line" fill-rule="evenodd" clip-rule="evenodd" d="M4.5 16.5C4.5 9.87258 9.87258 4.5 16.5 4.5H36.5C43.1274 4.5 48.5 9.87258 48.5 16.5C48.5 23.1274 43.1274 28.5 36.5 28.5H16.5C9.87258 28.5 4.5 23.1274 4.5 16.5ZM16.5 7.5C11.5294 7.5 7.5 11.5294 7.5 16.5C7.5 21.4706 11.5294 25.5 16.5 25.5H36.5C41.4706 25.5 45.5 21.4706 45.5 16.5C45.5 11.5294 41.4706 7.5 36.5 7.5H16.5Z"/>
                 <path class="outer-line" d="M16.5 3C9.04416 3 3 9.04416 3 16.5C3 23.9558 9.04416 30 16.5 30H36.5C43.9558 30 50 23.9558 50 16.5C50 9.04416 43.9558 3 36.5 3H16.5Z" stroke-width="3"/>
-                <circle class="inner-line" cx="16.5" cy="16.5" r="5"/>
+                <circle id="circle" class="inner-line" cx="16.5" cy="16.5" r="5">
+                  <animate id="circleMove" attributename="cx" from="16.5" to="36.5" dur="100ms" begin="indefinite" fill="freeze"></animate>
+                </circle>
               </g>
             </svg>
           </div>

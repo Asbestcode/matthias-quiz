@@ -15,7 +15,7 @@ Profile info
 }
 
 .info__head__avatar {
-  border: 3px var(--dark-color) solid;
+  border: 3px var(--icon-dark) solid;
   width: 35%;
   aspect-ratio: 1/1;
   border-radius: 50%;
