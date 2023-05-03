@@ -14,7 +14,6 @@ Styles for the cards wich contain a
   flex-direction: column;
   align-items: center;
   padding: 10px;
-  transition: all 200ms;
 }
 
 .card__question {
@@ -32,6 +31,11 @@ Styles for the cards wich contain a
   background-color: var(--mid-color);
   border: 3px var(--icon-dark) solid;
   border-radius: 10px;
+  transition: background-color 50ms ease-in-out;
+}
+
+.card__button:active {
+  background-color: var(--dark-color);
 }
 
 .card__answer {
@@ -66,4 +70,8 @@ Styles for the cards wich contain a
   position: absolute;
   top: -15px;
   right: 0;
+}
+
+.card__bookmark svg {
+  cursor: pointer;
 }

@@ -2,10 +2,10 @@ const AllButtons = document.querySelectorAll(".card__button");
 const AllAnswers = document.querySelectorAll(".card__answer");
 const bookmarkIcons = document.querySelectorAll(".card__bookmark svg");
 
-AllButtons.forEach((el, i) => {
-  el.addEventListener('click', () => {
-    const answer = AllAnswers[i];
-    const button = AllButtons[i];
+AllButtons.forEach((element, index) => {
+  element.addEventListener('click', () => {
+    const answer = AllAnswers[index];
+    const button = AllButtons[index];
     answer.classList.toggle("hidden");
     if (button.textContent.includes("Show Answer")) {
       button.textContent = "Hide Answer"
@@ -15,9 +15,9 @@ AllButtons.forEach((el, i) => {
   })
 })
 
-bookmarkIcons.forEach((el) => {
-  el.addEventListener('click', () => {
-    const fill = el.querySelector("g path");
+bookmarkIcons.forEach((element) => {
+  element.addEventListener('click', () => {
+    const fill = element.querySelector("g path");
     bookmarkIconSwitch(fill);
   })
 });
@@ -31,4 +31,3 @@ function bookmarkIconSwitch (fill) {
     fill.classList.add("fill");
   } 
 };
-

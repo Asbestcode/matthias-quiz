@@ -3,6 +3,7 @@ Import of page-related styles
 */
 
 @import url(index.css); /*also used for bookmarks*/
+@import url(form.css);
 @import url(profile.css);
 @import url(icons.css);
 
@@ -38,8 +39,6 @@ Custom properties for changing colors and fonts
   --mid-color: #a9a3e4;
   --dark-color: #2c2c3d;
   --white: #ffffff;
-
-  --s: #4b4285;
   --icon-dark: #2c2c3d;
   --icon-light: #ffffff;
   --text-small: 16px;
@@ -69,6 +68,7 @@ main {
   flex-direction: column;
   padding: 30px 20px 100px;
   gap: 30px;
+  min-height: 85vh;
   background-color: var(--mid-color);
 }
 
@@ -96,14 +96,19 @@ nav {
 }
 
 .navbar__icon {
-  width: 100%;
   padding: 6px 0px;
+  width: 100%;
   text-align: center;
   text-decoration: none;
   background-color: var(--white);
+  overflow: hidden;
 }
 
 .current {
   background-color: var(--dark-color);
+}
+
+button {
+  cursor: pointer;
 }
 

@@ -2,29 +2,22 @@ const header = document.querySelector("header");
 const currentIconBg = document.querySelector(".current");
 const navIconFill = document.querySelectorAll(".navbar__icon .icon .fill");
 const circle = document.getElementById("circle");
-const circleMove = document.getElementById("circleMove");
+const circleMoveRight = document.getElementById("circleMoveRight");
+const circleMoveLeft = document.getElementById("circleMoveLeft");
 let root = document.documentElement;
 
-let darkmode = localStorage.getItem("darkmode");
-
-if (darkmode == "true") {
+document.querySelector("#switch").addEventListener("click", function () {
+  let circlePos = circle.cx.animVal.value;
+  if (circlePos == "16.5") {
     addDarkmode();
+    circleMoveRight.beginElement();
+  } else {
+    removeDarkmode();
+    circleMoveLeft.beginElement();
   }
-  document.querySelector("#switch").addEventListener("click", function () {
-    darkmode = localStorage.getItem("darkmode");
-    if (darkmode == "true") {
-      removeDarkmode();
-    } else {
-      addDarkmode();
-    }
-  });
+});
   
   function addDarkmode() {
-    circleMove.beginElement();
-    circle.setAttribute("cx", "36.5");
-    circleMove.setAttribute("from", "36.5");
-    circleMove.setAttribute("to", "16.5");
-    darkmode = localStorage.setItem("darkmode", "true");
     root.style.setProperty('--light-color', "#2c2c3d");
     root.style.setProperty('--mid-color', "#161626");
     root.style.setProperty('--dark-color', "#4b4285");
@@ -39,11 +32,6 @@ if (darkmode == "true") {
   }
   
   function removeDarkmode() {
-    circleMove.beginElement();
-    circle.setAttribute("cx", "16.5");
-    circleMove.setAttribute("from", "16.5");
-    circleMove.setAttribute("to", "36.5");
-    darkmode = localStorage.setItem("darkmode", "false");
     root.style.setProperty('--light-color', "#ffedf4");
     root.style.setProperty('--mid-color', "#a9a3e4");
     root.style.setProperty('--dark-color', "#2c2c3d");

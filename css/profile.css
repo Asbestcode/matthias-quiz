@@ -81,3 +81,7 @@ Settings
   height: 50px;
   width: 50px;
 }
+
+#switch {
+  cursor: pointer;
+}

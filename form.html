@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Quizz App</title>
+  </head>
+  <body>
+    <header>
+      <h1>Question</h1>
+    </header>
+    <main>
+      <article class="card form">
+        <form data-js="form">
+          <div class="form__input" data-js="form__question">
+            <label for="question">Your question:</label>
+            <textarea id="question" name="question" cols="35" rows="4" maxlength="150" required></textarea>
+            <div class="count-display">150 / 150</div>
+          </div>
+          <div class="form__input" data-js="form__answer">
+            <label for="answer">Your answer:</label>
+            <textarea id="answer" name="answer" cols="35" rows="4" maxlength="150" required></textarea>
+            <div class="count-display">150 / 150</div> 
+          </div>
+          <div class="form__input">
+            <label for="tags">Add a tag:</label>
+            <input id="tags" name="tags" type="text" maxlength="15" required />
+          </div>
+          <button class="form__button" type="submit">Submit</button>
+        </form>
+      </article>
+    </main>
+    <nav>
+      <div class="navbar">
+        <a class="navbar__icon" href="index.html">
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g class="icon">
+              <path class="fill" d="M21 41H11V20L25 10L39 20V41H29V29H21V41Z"/>
+              <path class="inner-line" fill-rule="evenodd" clip-rule="evenodd" d="M25 7.14802L41 18.7342V43H27.5V30.5H22.5V43H9V18.7342L25 7.14802ZM12 20.2658V40H19.5V27.5H30.5V40H38V20.2658L25 10.852L12 20.2658Z"/>
+            </g>
+          </svg>
+        </a>
+        <a class="navbar__icon current" href="form.html">
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g class="icon">
+              <rect class="fill" x="9" y="9" width="32" height="32"/>
+              <path class="inner-line" fill-rule="evenodd" clip-rule="evenodd" d="M10 10H40V40H10V10ZM7 7H10H40H43V10V40V43H40H10H7V40V10V7ZM26.4896 29.6042C26.4896 28.5278 26.6632 27.6511 27.0104 26.974C27.3576 26.2969 27.9604 25.5292 28.8188 24.6708C29.9743 23.5153 30.7778 22.4948 31.2292 21.6094C31.6806 20.724 31.9062 19.7951 31.9062 18.8229C31.9062 16.9826 31.316 15.5243 30.1354 14.4479C28.9549 13.3715 27.3659 12.8333 25.3686 12.8333C23.5677 12.8333 22.0369 13.2587 20.7764 14.1094C19.5157 14.9601 18.5903 16.132 18 17.625L20.7604 18.7708C21.2465 17.7986 21.875 17.0608 22.6458 16.5573C23.4167 16.0538 24.316 15.8021 25.3438 15.8021C26.4549 15.8021 27.3316 16.0799 27.974 16.6354C28.6163 17.191 28.9375 17.9566 28.9375 18.9322C28.9375 19.6232 28.7465 20.2899 28.3646 20.9323C27.9826 21.5747 27.3403 22.3299 26.4375 23.1979C25.1528 24.4132 24.3455 25.4549 24.0156 26.3229C23.6858 27.191 23.5208 28.2847 23.5208 29.6042H26.4896ZM25.241 37.3125C25.7956 37.3125 26.2639 37.121 26.6458 36.7381C27.0278 36.3552 27.2188 35.8865 27.2188 35.3319C27.2188 34.7773 27.0273 34.309 26.6444 33.9271C26.2615 33.5451 25.7927 33.3542 25.2381 33.3542C24.6835 33.3542 24.2153 33.5456 23.8333 33.9286C23.4514 34.3115 23.2604 34.7802 23.2604 35.3348C23.2604 35.8894 23.4519 36.3576 23.8348 36.7396C24.2177 37.1215 24.6865 37.3125 25.241 37.3125Z"/>
+            </g>
+          </svg>
+        </a>
+        <a class="navbar__icon" href="bookmarks.html">
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g class="icon">
+              <path class="fill" d="M13 8V40.5L25 34L37 40.5V8H13Z"/>
+              <path class="inner-line" fill-rule="evenodd" clip-rule="evenodd" d="M14.5 9C14.2239 9 14 9.22386 14 9.5V38.9408L25 32.7808L36 38.9408V9.5C36 9.22386 35.7761 9 35.5 9H14.5ZM11 9.5C11 7.567 12.567 6 14.5 6H35.5C37.433 6 39 7.567 39 9.5V44.0592L25 36.2192L11 44.0592V9.5Z"/>
+            </g>
+          </svg>
+        </a>
+        <a class="navbar__icon" href="profile.html">
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g class="icon">
+                <path class="fill" d="M11 32.95V39H39V32.95L25 28L11 32.95Z"/>
+                <path class="inner-line" fill-rule="evenodd" clip-rule="evenodd" d="M16.1839 28.5522C19.5852 27.4251 23.3596 27 25 27C26.6404 27 30.4148 27.4251 33.8161 28.5522C35.5143 29.1149 37.2325 29.8885 38.5562 30.9577C39.8861 32.0318 41 33.5661 41 35.6154V41H9V35.6154C9 33.5661 10.1139 32.0318 11.4437 30.9577C12.7675 29.8885 14.4857 29.1149 16.1839 28.5522ZM13.2438 33.5423C12.3236 34.2855 12 34.9724 12 35.6154V37.7692H38V35.6154C38 34.9724 37.6764 34.2855 36.7563 33.5423C35.83 32.7942 34.4857 32.1543 32.9339 31.6401C29.8352 30.6133 26.3596 30.2308 25 30.2308C23.6404 30.2308 20.1648 30.6133 17.0661 31.6401C15.5143 32.1543 14.17 32.7942 13.2438 33.5423Z"/>
+                <circle class="fill" cx="25" cy="16.5" r="6"/>
+                <path class="inner-line" fill-rule="evenodd" clip-rule="evenodd" d="M25 12C22.5147 12 20.5 14.0147 20.5 16.5C20.5 18.9853 22.5147 21 25 21C27.4853 21 29.5 18.9853 29.5 16.5C29.5 14.0147 27.4853 12 25 12ZM17.5 16.5C17.5 12.3579 20.8579 9 25 9C29.1421 9 32.5 12.3579 32.5 16.5C32.5 20.6421 29.1421 24 25 24C20.8579 24 17.5 20.6421 17.5 16.5Z"/>
+            </g>
+          </svg>
+        </a>
+      </div>
+    </nav>
+    <template id="template">
+      <article class="card">
+        <p class="card__question"></p>
+        <button class="card__button">Show Answer</button>
+        <p class="card__answer hidden"></p>
+        <div class="card__tags"></div>
+        <div class="card__bookmark">
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="bm" class="icon switch">
+              <path class="fill" d="M13 8V40.5L25 34L37 40.5V8H13Z"/>
+              <path class="inner-line" fill-rule="evenodd" clip-rule="evenodd" d="M14.5 9C14.2239 9 14 9.22386 14 9.5V38.9408L25 32.7808L36 38.9408V9.5C36 9.22386 35.7761 9 35.5 9H14.5ZM11 9.5C11 7.567 12.567 6 14.5 6H35.5C37.433 6 39 7.567 39 9.5V44.0592L25 36.2192L11 44.0592V9.5Z"/>
+              <path class="outer-line" d="M38.2671 45.3679L40.5 46.6184V44.0592V9.5C40.5 6.73858 38.2614 4.5 35.5 4.5H14.5C11.7386 4.5 9.5 6.73858 9.5 9.5V44.0592V46.6184L11.7329 45.3679L25 37.9384L38.2671 45.3679Z" stroke-width="3"/>
+            </g>
+          </svg>
+        </div>
+      </article>
+    </template>
+    <script src="js/form.js"></script>
+  </body>
+</html>
