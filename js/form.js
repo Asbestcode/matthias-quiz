@@ -12,6 +12,8 @@ function countCharacters() {
     countDisplay.textContent = count + " / 150";
     if (count == 0) {
         textArea.style.backgroundColor = "var(--mid-color)";
+    } else {
+        textArea.style.backgroundColor = "";
     };
 }
 
