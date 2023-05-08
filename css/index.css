@@ -40,18 +40,20 @@ Styles for the cards wich contain a
 }
 
 .card__answer {
+  display: flex;
+  align-items: flex-end;
   width: 90%;
   text-align: center;
-  padding: 30px 0;
   font-size: var(--text-medium);
-  pointer-events: none;
-  transition: height 200ms ease-in, padding 200ms ease-in, opacity 200ms ease-in;
+  pointer-events: auto;
+  transition: height 200ms ease-in-out, opacity 200ms ease-in-out 100ms;
 }
 
 .hidden {
-  padding: 0;
   height: 0;
   opacity: 0;
+  pointer-events: none;
+  transition: height 200ms ease-in-out, opacity 100ms;
 }
 
 .card__tags {

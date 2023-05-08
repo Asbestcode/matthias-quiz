@@ -1,6 +1,6 @@
 
 function getAnswerHeight(answer) {
-  let answerHeight = answer.offsetHeight;
+  let answerHeight = answer.offsetHeight + 30;
   if (!answer.classList.contains("hidden")) {
     answer.classList.add("hidden")};
   return answerHeight;
@@ -22,7 +22,7 @@ function clickAnswer(button, answer, answerHeight) {
 
 function clickIcon(icon) {
   icon.addEventListener('click', () => {
-    const fill = icon.querySelector("g path");
+    let fill = icon.querySelector("g path");
     if (fill.classList.contains("fill")) {
       fill.classList.remove("fill");
       fill.classList.add("saved");
@@ -36,9 +36,10 @@ function clickIcon(icon) {
 function setUpCards() {
   let allCards = document.querySelectorAll('[data-js="card"]');
   allCards.forEach((card) => {
-    const icon = card.querySelector(".card__bookmark svg");
-    const button = card.querySelector(".card__button");
-    const answer = card.querySelector(".card__answer");
+    let icon = card.querySelector(".card__bookmark svg");
+    let button = card.querySelector(".card__button");
+    let answer = card.querySelector(".card__answer");
+    answer.removeAttribute("height");
     let answerHeight = getAnswerHeight(answer);
     clickAnswer(button, answer, answerHeight);
     clickIcon(icon);
