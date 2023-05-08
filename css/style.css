@@ -34,13 +34,25 @@ p {
 Custom properties for changing colors and fonts
 */
 
-:root {
+[data-theme="light"] {
   --light-color: #ffedf4;
   --mid-color: #a9a3e4;
   --dark-color: #2c2c3d;
   --white: #ffffff;
   --icon-dark: #2c2c3d;
   --icon-light: #ffffff;
+}
+  
+[data-theme="dark"] {
+  --light-color: #443C68;
+  --mid-color: #635985;
+  --dark-color: #4b4285;
+  --white: #18122B;
+  --icon-dark: #443C68;
+  --icon-light: #ffedf4;
+}
+
+:root {
   --text-small: 16px;
   --text-normal: 18px;
   --text-medium: 22px;

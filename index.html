@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Quizz App</title>
   </head>
-  <body>
+  <body  data-theme="light">
     <header>
       <h1>Quiz App</h1>
     </header>
     <main>
-      <article class="card">
+      <article class="card" data-js="card">
         <p class="card__question">What property flips the axes in flexbox?</p>
         <button class="card__button">Show Answer</button>
-        <p class="card__answer hidden">The property flex-direction flips the axes in flexbox.</p>
+        <p class="card__answer">The property flex-direction flips the axes in flexbox.</p>
         <div class="card__tags">
           <div>#html</div>
           <div>#flexbox</div>
@@ -31,10 +31,10 @@
           </svg>
         </div>
       </article>
-      <article class="card">
+      <article class="card" data-js="card">
         <p class="card__question">What flip flexes the properties in axebox?</p>
         <button class="card__button">Show Answer</button>
-        <p class="card__answer hidden">The flip axe-direction flexes the properties in axebox.</p>
+        <p class="card__answer">The flip axe-direction flexes the properties in axebox.</p>
         <div class="card__tags">
           <div>#html</div>
           <div>#flexbox</div>
@@ -50,10 +50,10 @@
           </svg>
         </div>
       </article>
-      <article class="card">
+      <article class="card" data-js="card">
         <p class="card__question">What axe propers the flex in flipbox?</p>
         <button class="card__button">Show Answer</button>
-        <p class="card__answer hidden">The axe flip-direction propers the flex in flipbox.</p>
+        <p class="card__answer">The axe flip-direction propers the flex in flipbox.</p>
         <div class="card__tags">
           <div>#html</div>
           <div>#flexbox</div>
@@ -112,6 +112,7 @@
         </a>
       </div>
     </nav>
+    <script src="js/darkmode.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>
